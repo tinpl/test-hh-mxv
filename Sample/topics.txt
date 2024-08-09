@@ -1,0 +1,20 @@
+﻿kafka:
+// sample.events.{context}.{event-source-type}.{event-name}
+
+sample.events.user.routes-search.request-created
+sample.events.user.routes-search.request-completed
+
+// sample.events.routes-search.tasks.task-created
+// sample.events.routes-search.tasks.task-completed
+// sample.events.routes-search.tasks.task-deleted
+
+sample.events.provider-{id}.routes.update-requested
+sample.events.provider-{id}.routes.update-failed
+sample.events.provider-{id}.routes.update-received
+
+redis:
+response-{x}-routes
+
+
+redis-pubsub:
+sample.events.provider-{_providerId}.routes.update-requested
